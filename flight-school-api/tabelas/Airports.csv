@@ -1,0 +1,27 @@
+﻿airport_id;city;airport;iata_code;icao_code
+1;Braganca;Braganca;BGC;LPBG
+2;Braga;Braga;BGZ;LPBR
+3;Coimbra;Coimbra;CBP;LPCO
+4;Chaves;Chaves;CHV;LPCH
+5;Covilha;Covilha;COV;LPCV
+6;Corvo Island;Corvo Island;CVU;LPCR
+7;Faro;Faro;FAO;LPFR
+8;Flores Island;Santa Cruz;FLW;LPFL
+9;Funchal;Madeira;FNC;LPMA
+10;Graciosa Island;Graciosa Island;GRW;LPGR
+11;Horta;Horta;HOR;LPHR
+12;Lisbon;Portela;LIS;LPPT
+13;Ourilandia;Ourilandia;OIA;PHNL
+14;Porto;Francisco Sб Carneiro;OPO;LPPR
+15;Ponta Delgada;Nordela;PDL;LPPD
+16;Pico Island;Pico Island;PIX;LPPI
+17;Portimao;Portimao;PRM;LPPM
+18;Porto Santo;Porto Santo;PXO;LPPS
+19;Sines;Sines;SIE;LPSI
+20;Sao Jorge Island;Sao Jorge Island;SJZ;LPSJ
+21;Santa Maria;Vila Do Porto;SMA;LPAZ
+22;Terceira Island;Lajes Ab;TER;LPLA
+23;Vila Real;Vila Real;VRL;LPVR
+24;Viseu;Viseu;VSE;LPVZ
+25;Tureira;Tureira;ZTA;NTGY
+26;Lisbon;Lisbon TP;ZYD;EHBK

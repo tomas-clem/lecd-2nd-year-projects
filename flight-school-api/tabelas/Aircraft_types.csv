@@ -1,0 +1,110 @@
+﻿aircraft_type_id;rating_renewal_period;manufacturer;​model;​type_designator;​description;​engine_type;​engine_count;wtc
+1;24;AI(R);BAe-4100 Jetstream 41;JS41;LandPlane;Turboprop/Turboshaft;2;M
+2;24;AI(R);Jetstream 41;JS41;LandPlane;Turboprop/Turboshaft;2;M
+3;24;BRITISH AEROSPACE;BAe-3100 Jetstream 31;JS31;LandPlane;Turboprop/Turboshaft;2;L/M
+4;24;BRITISH AEROSPACE;BAe-3200 Jetstream Super 31;JS32;LandPlane;Turboprop/Turboshaft;2;M
+5;24;BRITISH AEROSPACE;BAe-4100 Jetstream 41;JS41;LandPlane;Turboprop/Turboshaft;2;M
+6;24;BRITISH AEROSPACE;Jetstream 31;JS31;LandPlane;Turboprop/Turboshaft;2;L/M
+7;24;BRITISH AEROSPACE;Jetstream 41;JS41;LandPlane;Turboprop/Turboshaft;2;M
+8;24;BRITISH AEROSPACE;Jetstream Super 31;JS32;LandPlane;Turboprop/Turboshaft;2;M
+9;24;CENTURY;Jetstream 3;JS3;LandPlane;Turboprop/Turboshaft;2;L
+10;24;GRUMMAN;C-20J Gulfstream 2SP;GLF2;LandPlane;Jet;2;M
+11;24;GRUMMAN;G-159 Gulfstream 1;G159;LandPlane;Turboprop/Turboshaft;2;M
+12;24;GRUMMAN;G-1159 Gulfstream 2;GLF2;LandPlane;Jet;2;M
+13;24;GRUMMAN;G-1159 Gulfstream 2SP;GLF2;LandPlane;Jet;2;M
+14;24;GRUMMAN;G-1159B Gulfstream 2B;GLF2;LandPlane;Jet;2;M
+15;24;GRUMMAN;Gulfstream 1;G159;LandPlane;Turboprop/Turboshaft;2;M
+16;24;GRUMMAN;Gulfstream 2;GLF2;LandPlane;Jet;2;M
+17;24;GRUMMAN;Gulfstream 2B;GLF2;LandPlane;Jet;2;M
+18;24;GRUMMAN;Gulfstream 2SP;GLF2;LandPlane;Jet;2;M
+19;24;GRUMMAN;VC-4 Gulfstream 1;G159;LandPlane;Turboprop/Turboshaft;2;M
+20;24;GRUMMAN;VC-11 Gulfstream 2;GLF2;LandPlane;Jet;2;M
+21;24;GRUMMAN AMERICAN;G-1159 Gulfstream 2;GLF2;LandPlane;Jet;2;M
+22;24;GRUMMAN AMERICAN;G-1159 Gulfstream 2SP;GLF2;LandPlane;Jet;2;M
+23;24;GRUMMAN AMERICAN;G-1159B Gulfstream 2B;GLF2;LandPlane;Jet;2;M
+24;24;GRUMMAN AMERICAN;G-1159TT Gulfstream 2TT;GLF2;LandPlane;Jet;2;M
+25;24;GRUMMAN AMERICAN;Gulfstream 2;GLF2;LandPlane;Jet;2;M
+26;24;GRUMMAN AMERICAN;Gulfstream 2B;GLF2;LandPlane;Jet;2;M
+27;24;GRUMMAN AMERICAN;Gulfstream 2SP;GLF2;LandPlane;Jet;2;M
+28;24;GRUMMAN AMERICAN;Gulfstream 2TT;GLF2;LandPlane;Jet;2;M
+29;24;GULFSTREAM AEROSPACE;C-20A Gulfstream 3;GLF3;LandPlane;Jet;2;M
+30;24;GULFSTREAM AEROSPACE;C-20B Gulfstream 3;GLF3;LandPlane;Jet;2;M
+31;24;GULFSTREAM AEROSPACE;C-20C Gulfstream 3;GLF3;LandPlane;Jet;2;M
+32;24;GULFSTREAM AEROSPACE;C-20D Gulfstream 3;GLF3;LandPlane;Jet;2;M
+33;24;GULFSTREAM AEROSPACE;C-20E Gulfstream 3;GLF3;LandPlane;Jet;2;M
+34;24;GULFSTREAM AEROSPACE;C-20F Gulfstream 4;GLF4;LandPlane;Jet;2;M
+35;24;GULFSTREAM AEROSPACE;C-20G Gulfstream 4;GLF4;LandPlane;Jet;2;M
+36;24;GULFSTREAM AEROSPACE;C-20H Gulfstream 4;GLF4;LandPlane;Jet;2;M
+37;24;GULFSTREAM AEROSPACE;C-37 Gulfstream 5;GLF5;LandPlane;Jet;2;M
+38;24;GULFSTREAM AEROSPACE;G-4 Gulfstream 4;GLF4;LandPlane;Jet;2;M
+39;24;GULFSTREAM AEROSPACE;G-4 Gulfstream 4SP;GLF4;LandPlane;Jet;2;M
+40;24;GULFSTREAM AEROSPACE;G-4 Gulfstream G300;GLF4;LandPlane;Jet;2;M
+41;24;GULFSTREAM AEROSPACE;G-4 Gulfstream G350;GLF4;LandPlane;Jet;2;M
+42;24;GULFSTREAM AEROSPACE;G-4 Gulfstream G400;GLF4;LandPlane;Jet;2;M
+43;24;GULFSTREAM AEROSPACE;G-4 Gulfstream SRA-4;GLF4;LandPlane;Jet;2;M
+44;24;GULFSTREAM AEROSPACE;G-4X Gulfstream G450;GLF4;LandPlane;Jet;2;M
+45;24;GULFSTREAM AEROSPACE;G-5 Gulfstream 5;GLF5;LandPlane;Jet;2;M
+46;24;GULFSTREAM AEROSPACE;G-5SP Gulfstream 5SP;GLF5;LandPlane;Jet;2;M
+47;24;GULFSTREAM AEROSPACE;G-5SP Gulfstream G500;GLF5;LandPlane;Jet;2;M
+48;24;GULFSTREAM AEROSPACE;G-5SP Gulfstream G550;GLF5;LandPlane;Jet;2;M
+49;24;GULFSTREAM AEROSPACE;G-1159A Gulfstream 3;GLF3;LandPlane;Jet;2;M
+50;24;GULFSTREAM AEROSPACE;G-1159A Gulfstream SRA-1;GLF3;LandPlane;Jet;2;M
+51;24;GULFSTREAM AEROSPACE;Gulfstream 3;GLF3;LandPlane;Jet;2;M
+52;24;GULFSTREAM AEROSPACE;Gulfstream 4;GLF4;LandPlane;Jet;2;M
+53;24;GULFSTREAM AEROSPACE;Gulfstream 4SP;GLF4;LandPlane;Jet;2;M
+54;24;GULFSTREAM AEROSPACE;Gulfstream 5;GLF5;LandPlane;Jet;2;M
+55;24;GULFSTREAM AEROSPACE;Gulfstream 5SP;GLF5;LandPlane;Jet;2;M
+56;24;GULFSTREAM AEROSPACE;Gulfstream G300;GLF4;LandPlane;Jet;2;M
+57;24;GULFSTREAM AEROSPACE;Gulfstream G350;GLF4;LandPlane;Jet;2;M
+58;24;GULFSTREAM AEROSPACE;Gulfstream G450;GLF4;LandPlane;Jet;2;M
+59;24;GULFSTREAM AEROSPACE;Gulfstream G550;GLF5;LandPlane;Jet;2;M
+60;24;GULFSTREAM AEROSPACE;Gulfstream SRA-1;GLF3;LandPlane;Jet;2;M
+61;24;GULFSTREAM AEROSPACE;Gulfstream SRA-4;GLF4;LandPlane;Jet;2;M
+62;24;GULFSTREAM AEROSPACE;S102 Gulfstream 4;GLF4;LandPlane;Jet;2;M
+63;24;GULFSTREAM AEROSPACE;Tp102 Gulfstream 4;GLF4;LandPlane;Jet;2;M
+64;24;GULFSTREAM AEROSPACE;U-4 Gulfstream 4;GLF4;LandPlane;Jet;2;M
+65;24;GULFSTREAM AEROSPACE;Gulfstream G650;GLF6;LandPlane;Jet;2;M
+66;24;GULFSTREAM AEROSPACE;Gulfstream G280;G280;LandPlane;Jet;2;M
+67;24;GULFSTREAM AEROSPACE;Gulfstream G100;ASTR;LandPlane;Jet;2;M
+68;24;GULFSTREAM AEROSPACE;Gulfstream G150;G150;LandPlane;Jet;2;M
+69;24;GULFSTREAM AEROSPACE;Gulfstream G200;GALX;LandPlane;Jet;2;M
+70;24;GULFSTREAM AEROSPACE;Gulfstream G250;G250;LandPlane;Jet;2;M
+71;24;GULFSTREAM AEROSPACE;Gulfstream G500 (G-5SP);GLF5;LandPlane;Jet;2;M
+72;24;GULFSTREAM AEROSPACE;G-7 Gulfstream G500;GA5C;LandPlane;Jet;2;M
+73;24;GULFSTREAM AEROSPACE;G-7 Gulfstream G600;GA6C;LandPlane;Jet;2;M
+74;24;GULFSTREAM AEROSPACE;Gulfstream G500 (G-7);GA5C;LandPlane;Jet;2;M
+75;24;GULFSTREAM AEROSPACE;Gulfstream G600;GA6C;LandPlane;Jet;2;M
+76;24;GULFSTREAM AEROSPACE;G-8 Gulfstream G700;GA7C;LandPlane;Jet;2;M
+77;24;GULFSTREAM AEROSPACE;Gulfstream G700;GA7C;LandPlane;Jet;2;M
+78;24;GULFSTREAM AEROSPACE;G-6 Gulfstream G650;GLF6;LandPlane;Jet;2;M
+79;24;GULFSTREAM AEROSPACE;G-7 Gulfstream G400;GA4C;LandPlane;Jet;2;M
+80;24;GULFSTREAM AEROSPACE;G-8 Gulfstream G800;GA8C;LandPlane;Jet;2;M
+81;24;GULFSTREAM AEROSPACE;Gulfstream G400 (G-4);GLF4;LandPlane;Jet;2;M
+82;24;GULFSTREAM AEROSPACE;Gulfstream G400 (G-7);GA4C;LandPlane;Jet;2;M
+83;24;GULFSTREAM AEROSPACE;Gulfstream G800;GA8C;LandPlane;Jet;2;M
+84;24;GULFSTREAM AMERICAN;G-1159 Gulfstream 2;GLF2;LandPlane;Jet;2;M
+85;24;GULFSTREAM AMERICAN;G-1159 Gulfstream 2SP;GLF2;LandPlane;Jet;2;M
+86;24;GULFSTREAM AMERICAN;G-1159A Gulfstream 3;GLF3;LandPlane;Jet;2;M
+87;24;GULFSTREAM AMERICAN;G-1159A Gulfstream SMA-3;GLF3;LandPlane;Jet;2;M
+88;24;GULFSTREAM AMERICAN;G-1159B Gulfstream 2B;GLF2;LandPlane;Jet;2;M
+89;24;GULFSTREAM AMERICAN;G-1159TT Gulfstream 2TT;GLF2;LandPlane;Jet;2;M
+90;24;GULFSTREAM AMERICAN;Gulfstream 2;GLF2;LandPlane;Jet;2;M
+91;24;GULFSTREAM AMERICAN;Gulfstream 2B;GLF2;LandPlane;Jet;2;M
+92;24;GULFSTREAM AMERICAN;Gulfstream 2SP;GLF2;LandPlane;Jet;2;M
+93;24;GULFSTREAM AMERICAN;Gulfstream 2TT;GLF2;LandPlane;Jet;2;M
+94;24;GULFSTREAM AMERICAN;Gulfstream 3;GLF3;LandPlane;Jet;2;M
+95;24;GULFSTREAM AMERICAN;Gulfstream SMA-3;GLF3;LandPlane;Jet;2;M
+96;24;IAI;1125 Gulfstream G100;ASTR;LandPlane;Jet;2;M
+97;24;IAI;1126 Gulfstream G200;GALX;LandPlane;Jet;2;M
+98;24;IAI;Gulfstream G100;ASTR;LandPlane;Jet;2;M
+99;24;IAI;Gulfstream G150;G150;LandPlane;Jet;2;M
+100;24;IAI;Gulfstream G200;GALX;LandPlane;Jet;2;M
+101;24;IAI;Gulfstream G280;G280;LandPlane;Jet;2;M
+102;24;IAI;Gulfstream G250;G250;LandPlane;Jet;2;M
+103;24;JETSTREAM;BAe-3200 Jetstream Super 31;JS32;LandPlane;Turboprop/Turboshaft;2;M
+104;24;JETSTREAM;BAe-4100 Jetstream 41;JS41;LandPlane;Turboprop/Turboshaft;2;M
+105;24;JETSTREAM;Jetstream 41;JS41;LandPlane;Turboprop/Turboshaft;2;M
+106;24;JETSTREAM;Jetstream Super 31;JS32;LandPlane;Turboprop/Turboshaft;2;M
+107;24;RILEY;Turbostream;C310;LandPlane;Piston;2;L
+108;48;TL ULTRALIGHT;Stream;STRE;LandPlane;Piston;1;L
+109;24;VOLPAR;Century Jetstream 3;JS3;LandPlane;Turboprop/Turboshaft;2;L

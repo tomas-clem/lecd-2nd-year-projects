@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+    <a href="/main" target="_self">
+        <h1> Googol </h1>
+    </a>
+    <pag th="'Query: ' + ${query}" />
+    <table>
+        <thead>
+            <tr>
+                <td width="20px"><b>ID</b> </td>
+                <td><b>URL</b></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="empl, iStat : ${res}" th:style="${iStat.odd}? 'font-weight: bold;'">
+                <td width="20px" th:text="${iStat.index+1}">
+                </td><td><a th:href="${empl}" th:text="${empl}"></a></td>
+            </td></tr>
+        </tbody>
+    </table>
+</body>
+</html>

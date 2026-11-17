@@ -1,0 +1,749 @@
+{
+	"info": {
+		"_postman_id": "598aecf3-cee2-4c66-92e9-ec9f661a3aa5",
+		"name": "Scripts_Postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24777462"
+	},
+	"item": [
+		{
+			"name": "last_30_days",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/proj/report/monthly_booking/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"proj",
+						"report",
+						"monthly_booking",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "flightlog_existent",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"flight_from\" : \"1\",\r\n        \"flight_to\": \"8\",\r\n        \"flight_start\": \"16-06-2022 01:42\",\r\n        \"flight_end\": \"16-06-2022 17:28\",\r\n        \"landings\": \"3\",\r\n        \"passengers\": \"21\",\r\n        \"pilot_id\":    \"6\",\r\n        \"aircraft_id\":\"12\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/proj/flightlog",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"proj",
+						"flightlog"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "flightlog_non-existent",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Booking_id doesn't exist\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"flight_from\" : \"1\",\r\n        \"flight_to\": \"8\",\r\n        \"flight_start\": \"12-12-2012 10:24\",\r\n        \"flight_end\": \"12-12-2013 14:17\",\r\n        \"landings\": \"3\",\r\n        \"passengers\": \"21\",\r\n        \"pilot_id\":    \"2\",\r\n        \"aircraft_id\":\"4\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/proj/flightlog",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"proj",
+						"flightlog"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "flightlog_not_in_payload",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"landings value not in payload\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"flight_from\" : \"1\",\r\n        \"flight_to\": \"8\",\r\n        \"flight_start\": \"16-06-2022 01:42\",\r\n        \"flight_end\": \"16-06-2022 17:28\",\r\n        \"passengers\": \"21\",\r\n        \"pilot_id\":    \"6\",\r\n        \"aircraft_id\":\"12\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/proj/flightlog",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"proj",
+						"flightlog"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "10_most_pilots",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/proj/report/year_booking/2022",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"proj",
+						"report",
+						"year_booking",
+						"2022"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "10_most_pilots_2021",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/proj/report/year_booking/2021",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"proj",
+						"report",
+						"year_booking",
+						"2021"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bookings_date",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/proj/booking/24-06-2022",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"proj",
+						"booking",
+						"24-06-2022"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "new_booking",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"aircraft_id\": \"12\",\r\n        \"booking_type\": \"3\",\r\n        \"booking_start\": \"12-12-2012 16:24\",\r\n        \"booking_end\": \"12-12-2012 19:17\",\r\n        \"pilot_id\" : \"4\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/proj/booking",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"proj",
+						"booking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "new_booking_licenses_expired",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"License expired\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"aircraft_id\": \"12\",\r\n        \"booking_type\": \"3\",\r\n        \"booking_start\": \"12-12-2030 16:24\",\r\n        \"booking_end\": \"12-12-2030 19:17\",\r\n        \"pilot_id\" : \"4\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/proj/booking",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"proj",
+						"booking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "new_booking_aircraft_already_booked",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Aircraft already booked for this date\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"aircraft_id\": \"12\",\r\n        \"booking_type\": \"3\",\r\n        \"booking_start\": \"12-12-2012 16:24\",\r\n        \"booking_end\": \"12-12-2012 19:17\",\r\n        \"pilot_id\" : \"4\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/proj/booking",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"proj",
+						"booking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "new_booking_pilot_already_booked",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Pilot has another booking at this date\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"aircraft_id\": \"3\",\r\n        \"booking_type\": \"3\",\r\n        \"booking_start\": \"12-12-2012 16:24\",\r\n        \"booking_end\": \"12-12-2012 19:17\",\r\n        \"pilot_id\" : \"4\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/proj/booking",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"proj",
+						"booking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "new_booking_student",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Students can't book\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"aircraft_id\": \"7\",\r\n        \"booking_type\": \"3\",\r\n        \"booking_start\": \"12-12-2022 10:41\",\r\n        \"booking_end\": \"12-12-2022 12:37\",\r\n        \"pilot_id\" : \"1\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/proj/booking",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"proj",
+						"booking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "new_booking_not_in_payload",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"pilot_id value not in payload\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"aircraft_id\": \"12\",\r\n        \"booking_type\": \"3\",\r\n        \"booking_start\": \"12-12-2012 16:24\",\r\n        \"booking_end\": \"12-12-2012 19:17\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/proj/booking",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"proj",
+						"booking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add_aircraft",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"tail_number\": \"S-FAS54321\",\r\n        \"serial_number\": \"124843\",\r\n        \"category\": \"3\",\r\n        \"home_airport\" : \"22\",\r\n        \"color\": \"B\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/proj/aircraft",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"proj",
+						"aircraft"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add_aircraft_serial",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"serial_number already registered\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"tail_number\": \"J-GM421321\",\r\n        \"serial_number\": \"124843\",\r\n        \"category\": \"3\",\r\n        \"home_airport\" : \"22\",\r\n        \"color\": \"B\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/proj/aircraft",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"proj",
+						"aircraft"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add_aircraft_tail",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"tail_number already registered\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"tail_number\": \"S-FAS54321\",\r\n        \"serial_number\": \"92715\",\r\n        \"category\": \"3\",\r\n        \"home_airport\" : \"22\",\r\n        \"color\": \"B\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/proj/aircraft",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"proj",
+						"aircraft"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pilot_details",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/proj/pilot/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"proj",
+						"pilot",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search_pilot",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/proj/pilot/Bal",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"proj",
+						"pilot",
+						"Bal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update_pilot",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"first_name\": \"Manuel\",\r\n        \"last_name\": \"Jorge\",\r\n        \"home_airport\": \"26\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/proj/pilot/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"proj",
+						"pilot",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

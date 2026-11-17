@@ -1,0 +1,8 @@
+﻿pilot_id;pilot_first_name;pilot_last_name;pilot_license;pilot_license_start_date;pilot_license_expiration_date;pilot_medical_class;pilot_medical_start_date;pilot_medical_expiration_date;number
+1;Jack;Ryan;C2303A;20-09-2021;20-09-2023;162534;20-09-2021;20-09-2023;1
+2;Jean-Luc;Picard;P1598A;12-01-2021;12-01-2023;342516;12-01-2021;12-01-2023;2
+3;Rocky;Balboa;C4404A;18-03-2022;18-03-2024;163425;18-03-2022;18-03-2024;3
+4;Frank;Sinatra;P2208A;28-07-2021;28-07-2023;614352;28-07-2021;28-07-2023;4
+5;Bruce;Wayne;P4411A;13-06-2021;13-06-2023;651243;13-06-2021;13-06-2023;2
+6;Peter;Parker;C1110A;02-11-2022;02-11-2024;123654;02-01-2022;02-01-2024;3
+

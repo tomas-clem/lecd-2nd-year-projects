@@ -1,0 +1,6 @@
+﻿booking_type_id;booking_type_description
+1;INSTRUCTION
+2;TRAINING
+3;ADAPTATION
+4;PROF CHECK
+5;SKILL TEST
